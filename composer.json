@@ -1,0 +1,12 @@
+{
+    "name": "snowio/magento2-sales-backport",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\Sales\\": ""
+        }
+    }
+}
