@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Sales\Api\ShipOrderInterface" type="Magento\Sales\Model\ShipOrder"/>
+    <preference for="Magento\Sales\Api\Data\ShipmentItemCreationInterface" type="Magento\Sales\Model\Order\Shipment\ItemCreation"/>
+    <preference for="Magento\Sales\Api\Data\ShipmentCommentCreationInterface" type="Magento\Sales\Model\Order\Shipment\CommentCreation"/>
+    <preference for="Magento\Sales\Api\Data\ShipmentTrackCreationInterface" type="Magento\Sales\Model\Order\Shipment\TrackCreation"/>
+    <preference for="Magento\Sales\Api\Data\ShipmentPackageCreationInterface" type="Magento\Sales\Model\Order\Shipment\PackageCreation"/>
+    <preference for="Magento\Sales\Api\Data\ShipmentCreationArgumentsInterface" type="Magento\Sales\Model\Order\Shipment\CreationArguments"/>
+    <preference for="Magento\Sales\Api\Data\ShipmentTrackInterface" type="Magento\Sales\Model\Order\Shipment\Track"/>
+    <preference for="Magento\Sales\Model\Order\OrderStateResolverInterface" type="Magento\Sales\Model\Order\StateResolver"/>
+    <preference for="Magento\Sales\Model\Order\Shipment\NotifierInterface" type="Magento\Sales\Model\Order\Shipment\Notifier"/>
+    <preference for="Magento\Sales\Model\Order\Shipment\OrderRegistrarInterface" type="Magento\Sales\Model\Order\Shipment\OrderRegistrar"/>
+    <preference for="Magento\Sales\Model\Order\Validation\ShipOrderInterface" type="Magento\Sales\Model\Order\Validation\ShipOrder"/>
+
+</config>
