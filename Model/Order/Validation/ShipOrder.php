@@ -4,6 +4,7 @@
  * See COPYING.txt for license details.
  */
 namespace Magento\Sales\Model\Order\Validation;
+
 use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Api\Data\ShipmentInterface;
 use Magento\Sales\Model\Order\Shipment\Validation\QuantityValidator;
@@ -11,6 +12,7 @@ use Magento\Sales\Model\Order\OrderValidatorInterface;
 use Magento\Sales\Model\Order\Shipment\ShipmentValidatorInterface;
 use Magento\Sales\Model\Order\Shipment\Validation\TrackValidator;
 use Magento\Sales\Model\ValidatorResultMerger;
+
 /**
  * Class ShipOrder
  */
@@ -28,6 +30,7 @@ class ShipOrder implements ShipOrderInterface
      * @var ValidatorResultMerger
      */
     private $validatorResultMerger;
+
     /**
      * ShipOrder constructor.
      *
@@ -44,6 +47,7 @@ class ShipOrder implements ShipOrderInterface
         $this->shipmentValidator = $shipmentValidator;
         $this->validatorResultMerger = $validatorResultMerger;
     }
+
     /**
      * @param OrderInterface $order
      * @param ShipmentInterface $shipment

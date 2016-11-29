@@ -4,8 +4,10 @@
  * See COPYING.txt for license details.
  */
 namespace Magento\Sales\Exception;
+
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Sales\Api\Exception\CouldNotShipExceptionInterface;
+
 /**
  * Class CouldNotShipException
  */

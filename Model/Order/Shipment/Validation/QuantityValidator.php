@@ -4,6 +4,7 @@
  * See COPYING.txt for license details.
  */
 namespace Magento\Sales\Model\Order\Shipment\Validation;
+
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Sales\Api\Data\OrderInterface;
 use Magento\Sales\Api\Data\OrderItemInterface;
@@ -12,6 +13,7 @@ use Magento\Sales\Api\OrderRepositoryInterface;
 use Magento\Sales\Exception\DocumentValidationException;
 use Magento\Sales\Model\Order\Item;
 use Magento\Sales\Model\ValidatorInterface;
+
 /**
  * Class QuantityValidator
  */
@@ -21,6 +23,7 @@ class QuantityValidator implements ValidatorInterface
      * @var OrderRepositoryInterface
      */
     private $orderRepository;
+
     /**
      * InvoiceValidator constructor.
      * @param OrderRepositoryInterface $orderRepository
@@ -30,6 +33,7 @@ class QuantityValidator implements ValidatorInterface
     ) {
         $this->orderRepository = $orderRepository;
     }
+
     /**
      * @param ShipmentInterface $entity
      * @return array
@@ -58,7 +62,7 @@ class QuantityValidator implements ValidatorInterface
             }
             $orderItem = $orderItemsById[$item->getOrderItemId()];
             if (!$this->isQtyAvailable($orderItem, $item->getQty())) {
-                $messages[] =__(
+                $messages[] = __(
                     'The quantity to ship must not be greater than the unshipped quantity'
                     . ' for product SKU "%1".',
                     $orderItem->getSku()
@@ -72,6 +76,7 @@ class QuantityValidator implements ValidatorInterface
         }
         return $messages;
     }
+
     /**
      * @param OrderInterface $order
      * @return OrderItemInterface[]
@@ -84,6 +89,7 @@ class QuantityValidator implements ValidatorInterface
         }
         return $orderItemsById;
     }
+
     /**
      * @param Item $orderItem
      * @param int $qty

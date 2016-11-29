@@ -4,8 +4,10 @@
  * See COPYING.txt for license details.
  */
 namespace Magento\Sales\Model;
+
 use Magento\Framework\Exception\ConfigurationMismatchException;
 use Magento\Framework\ObjectManagerInterface;
+
 /**
  * Class Validator
  *
@@ -21,6 +23,7 @@ class Validator
      * @var ValidatorResultInterfaceFactory
      */
     private $validatorResultFactory;
+
     /**
      * Validator constructor.
      *
@@ -34,6 +37,7 @@ class Validator
         $this->objectManager = $objectManager;
         $this->validatorResultFactory = $validatorResult;
     }
+
     /**
      * @param object $entity
      * @param ValidatorInterface[] $validators

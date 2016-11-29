@@ -11,5 +11,7 @@
     <preference for="Magento\Sales\Model\Order\Shipment\NotifierInterface" type="Magento\Sales\Model\Order\Shipment\Notifier"/>
     <preference for="Magento\Sales\Model\Order\Shipment\OrderRegistrarInterface" type="Magento\Sales\Model\Order\Shipment\OrderRegistrar"/>
     <preference for="Magento\Sales\Model\Order\Validation\ShipOrderInterface" type="Magento\Sales\Model\Order\Validation\ShipOrder"/>
-
+    <preference for="Magento\Sales\Model\Order\OrderValidatorInterface" type="Magento\Sales\Model\Order\OrderValidator"/>
+    <preference for="Magento\Sales\Model\Order\Shipment\ShipmentValidatorInterface" type="Magento\Sales\Model\Order\Shipment\ShipmentValidator"/>
+    <preference for="Magento\Sales\Model\ValidatorResultInterface" type="Magento\Sales\Model\ValidatorResult"/>
 </config>

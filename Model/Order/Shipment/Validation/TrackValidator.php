@@ -4,8 +4,10 @@
  * See COPYING.txt for license details.
  */
 namespace Magento\Sales\Model\Order\Shipment\Validation;
+
 use Magento\Sales\Api\Data\ShipmentInterface;
 use Magento\Sales\Model\ValidatorInterface;
+
 /**
  * Class TrackRequiredField
  */
